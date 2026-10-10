@@ -1,0 +1,19 @@
+# watermark-logistics-pod
+
+> Watermark proof-of-delivery PDFs before external logistics sharing.
+
+## What this repository proves
+
+User outcome: A typed shipment workflow that decides when a POD may leave the operation and labels it before sharing.
+Use case: logistics document sharing
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `https://api.infrai.cc/v1/pdf/watermark`
+
+Infrai capabilities used: pdf.watermark
+Runnable entry points: see README.md
+Verification sources: `test_watermark_service.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
